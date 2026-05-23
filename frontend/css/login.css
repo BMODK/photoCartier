@@ -3,6 +3,13 @@
     width: 100%;
     height: auto;
 }
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-variant: small-caps;
+}
 .login-geral{
     display: flex;
     width: 100%;
@@ -19,21 +26,27 @@
     object-fit: cover;
 }
 .login-formulario{
+    background-color:#0b0b0b;
     display: flex;
     flex-direction: column;
     width: 40%;
-    background-color: white;
     margin: auto 0;
     align-items: center;
 }
 .login-formulario > *{
     width: 400px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
-#campo-formulario{
-    color: rgb(0, 0, 0);
-    border: white;
+input{
+    padding: 10px;
+    color: white;
+    background-color: transparent;
+    border: rgb(0, 0, 0);
+    outline: none;
     border-bottom: gray 1px solid;
+}
+input:focus{
+    border-bottom: 1px solid #ffff;
 }
 .botoes-login{
     display: flex;
@@ -41,13 +54,34 @@
     align-items: center;
     justify-content: center;
 }
-.botao-confirma{
-    width: 70px;
-    height: 30px;
-    background-color: rgb(6, 230, 6);
-    border-color: rgb(0, 0, 0);
-    border-width: 1px;
+#botaologin{
+    background-color: #ffffff; /* Fundo Branco */
+    color: #000000;  
+    border-color: transparent;          /* Texto Preto */
+    border-radius: 0px;        /* QUADRADO PERFEITO */
+    padding: 12px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s;
 }
-.botao-confirma:hover{
-    background-color: rgb(88, 255, 88);
+#botaologin:hover{
+    background-color: transparent;
+    border-color: #ffff;
+    color: #ffff;
+}
+#botaosign{
+    background-color: transparent; /* Fundo Transparente */
+    color: #ffff;            /* Texto brancp */
+    border-color: #ffff;
+    border-radius: 0px;        /* QUADRADO PERFEITO */
+    padding: 12px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#botaosign:hover{
+    background-color: #ffff;
+    color: #000000;
 }
