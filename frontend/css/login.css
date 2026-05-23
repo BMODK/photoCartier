@@ -25,7 +25,7 @@ body {
     height: 100%;
     object-fit: cover;
 }
-.login-formulario{
+.login-formulario, .cadastro-formulario{
     background-color:#0b0b0b;
     display: flex;
     flex-direction: column;
@@ -34,6 +34,10 @@ body {
     align-items: center;
 }
 .login-formulario > *{
+    width: 400px;
+    margin-top: 20px;
+}
+.cadastro-formulario > *{
     width: 400px;
     margin-top: 20px;
 }
@@ -70,7 +74,7 @@ input:focus{
     border-color: #ffff;
     color: #ffff;
 }
-#botaosign{
+#botaosign, #botao-cadastro{
     background-color: transparent; /* Fundo Transparente */
     color: #ffff;            /* Texto brancp */
     border-color: #ffff;
@@ -81,7 +85,11 @@ input:focus{
     cursor: pointer;
     transition: background 0.2s;
 }
-#botaosign:hover{
+#botaosign:hover, #botao-cadastro:hover{
     background-color: #ffff;
     color: #000000;
+}
+/* desaparece com todo o 'container'*/
+.escondido{
+    display: none !important;
 }

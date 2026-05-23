@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <link rel="stylesheet" href="../frontend/css/login.css">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 </head>
+
 <body>
-    
-    <div class = login-geral>
-        <div class = login-formulario>
-            <input type= "text" placeholder="Login" >
-            <input type = "password" placeholder="Senha" >
-            <div class = botoes-login>
-                <button type="button" id = botaologin> Login </button>
-                <button type="button" id = botaosign> Sign-up </button>
-            </div>            
+
+    <div class=login-geral>
+        <div class=login-formulario id="container-login">
+            <input type="text" placeholder="Login">
+            <input type="password" placeholder="Senha">
+            <div class=botoes-login>
+                <button type="button" id=botaologin> Login </button>
+                <button type="button" id=botaosign> Criar conta </button>
+            </div>
         </div>
-        <div class = login-background>
+
+        <div class="cadastro-formulario escondido" id="container-cadastro">
+            <h2>Criar Conta</h2>
+            <input type="text" id="novo-usuario" placeholder="Escolha um Usuário">
+            <input type="password" id="nova-senha" placeholder="Crie uma Senha">
+            <button type="button" id="botao-cadastro"> Cadastrar </button>
+        </div> 
+        <div class=login-background>
             <img src="imagens/capalogin.jpg" alt="fundologin">
-        </div>
+        </div> 
     </div>
+
     <script src="js/login.js"></script>
 </body>
+
 </html>
