@@ -58,7 +58,7 @@ input:focus{
     align-items: center;
     justify-content: center;
 }
-#botaologin{
+#botao-login, #botao-voltar{
     background-color: #ffffff; /* Fundo Branco */
     color: #000000;  
     border-color: transparent;          /* Texto Preto */
@@ -69,12 +69,12 @@ input:focus{
     cursor: pointer;
     transition: background 0.2s;
 }
-#botaologin:hover{
+#botao-login:hover, #botao-voltar:hover{
     background-color: transparent;
     border-color: #ffff;
     color: #ffff;
 }
-#botaosign, #botao-cadastro{
+#botao-nova-conta, #botao-cadastro{
     background-color: transparent; /* Fundo Transparente */
     color: #ffff;            /* Texto brancp */
     border-color: #ffff;
@@ -85,7 +85,7 @@ input:focus{
     cursor: pointer;
     transition: background 0.2s;
 }
-#botaosign:hover, #botao-cadastro:hover{
+#botao-nova-conta:hover, #botao-cadastro:hover{
     background-color: #ffff;
     color: #000000;
 }
