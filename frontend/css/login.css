@@ -1,5 +1,7 @@
 *{
     margin: 0;
+    width: 100%;
+    height: auto;
 }
 .login-geral{
     display: flex;
@@ -7,17 +9,25 @@
     height: 100vh;
 }
 .login-background{
-    width: 60%;
+    max-width: 60%;
     background-color: antiquewhite;
+    overflow: hidden;
+}
+.login-background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .login-formulario{
+    display: flex;
+    flex-direction: column;
     width: 40%;
     background-color: white;
     margin: auto 0;
-    text-align: center;
-    height: 150px;
+    align-items: center;
 }
 .login-formulario > *{
+    width: 400px;
     margin-top: 10px;
 }
 #campo-formulario{
@@ -25,11 +35,19 @@
     border: white;
     border-bottom: gray 1px solid;
 }
+.botoes-login{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
 .botao-confirma{
-    background-color: rgb(2, 210, 2);
-    border-color: rgb(10, 123, 0);
+    width: 70px;
+    height: 30px;
+    background-color: rgb(6, 230, 6);
+    border-color: rgb(0, 0, 0);
     border-width: 1px;
 }
 .botao-confirma:hover{
-    background-color: rgb(6, 232, 6);
+    background-color: rgb(88, 255, 88);
 }
