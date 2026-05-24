@@ -10,7 +10,7 @@
     <title>Index</title>
 </head>
 
-<body>
+<body id = "pagina-index">
   <section>
     <div class="hero-content">
       <div class="hero">
@@ -27,24 +27,28 @@
 <nav class="menu-navegacao">
   <ul>
     <li>
-      <button>
+      <button class = "botao-primario">
         <a href="#"><i class="fas fa-home"></i> Início</a>
       </button>
     </li>
     <li>
-      <button>
+      <button class="botao-secundario">
         <a href="../frontend/login.html"><i class="fas fa-jelly fa-regular fa-door-closed"></i> Login</a>
       </button>
     </li>
   </ul>
 
   <div class="barra-pesquisa">
-    <input type="text" placeholder="Pesquisar...">
-    <button class="botao-pesquisa">
+    <input id="pesquisa" type="text" placeholder="Pesquisar...">
+    <button class="botao-primario" id="botao-pesquisa">
       <i class="fas fa-search"></i>
+    </button>
+    <button class="botao-secundario" id="botao-tema">
+      <i class="fas fa-moon"></i>
     </button>
   </div>
 </nav>
+<script src="js/index.js"></script>
 </body>
 
 </html>

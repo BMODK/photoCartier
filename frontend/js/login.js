@@ -1,6 +1,7 @@
 // Variaveis padrao para teste
 let usuarioCadastro = "Teste";
 let usuarioSenha = "123";
+
 // ---- ELEMENTOS LOGIN ----
 const botaoLogin = document.querySelector('#botao-login');
 const inputNome = document.querySelector('#nome-login');

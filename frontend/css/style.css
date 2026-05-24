@@ -1,13 +1,60 @@
+:root{
+    --cor-branca: white;
+    --cor-preta: black;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
+/* CONFIGURAÇÕES GERAIS */
+.botao-primario{
+    background-color: var(--cor-branca); /* Fundo Branco */
+    color: var(--cor-preta);  
+    border-color: transparent;          /* Texto Preto */
+    border-radius: 0px;        /* QUADRADO PERFEITO */
+    padding: 12px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.botao-primario:hover{
+    background-color: transparent;
+    border-color: var(--cor-branca);
+    color: var(--cor-branca);
+}
+.botao-secundario{
+    background-color: transparent; /* Fundo Transparente */
+    color: var(--cor-branca);            /* Texto brancp */
+    border-color: var(--cor-branca);
+    border-radius: 0px;        /* QUADRADO PERFEITO */
+    padding: 12px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.botao-secundario:hover{
+    background-color: var(--cor-branca);
+    color: var(--cor-preta);
+}
+input{
+    padding: 10px;
+    color: var(--cor-branca);
+    background-color: transparent;
+    border: var(--cor-preta);
+    outline: none;
+    border-bottom: gray 1px solid;
+}
+input:focus{
+    border-bottom: 1px solid var(--cor-branca);
+}
+/* ------- PÁGINA INDEX ------- */
+#pagina-index{
     margin: 0;
-    background-color: black;
-    color: white;
+    background-color: var(--cor-preta);
+    color: var(--cor-branca);
     font-family: Arial, Helvetica, sans-serif;
     font-variant: small-caps;
 }
@@ -71,12 +118,63 @@ a {
     margin: 0 auto;
     gap: 8px;
 }
-
+#pesquisa {
+    width: 300px;
+}
 .barra-pesquisa button {
     display: flex;
     gap: 8px;
-   border-radius: 20px; 
-  border: 1px solid #ddd;
-  padding: 6px 12px;
+    border-radius: 20px; 
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+}
 
+/* ------------- LOGIN PAGE -----------*/
+#pagina-login{
+    margin: 0;
+    background-color: var(--cor-preta);
+    color: var(--cor-branca);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-variant: small-caps;
+}
+.login-geral{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.login-background{
+    max-width: 60%;
+    background-color: var(--cor-branca);
+    overflow: hidden;
+}
+.login-background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.login-formulario, .cadastro-formulario{
+    background-color: var(--cor-preta);
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto 0;
+    align-items: center;
+}
+.login-formulario > *{
+    width: 400px;
+    margin-top: 20px;
+}
+.cadastro-formulario > *{
+    width: 400px;
+    margin-top: 20px;
+}
+.botoes-login{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+/* desaparece com todo o 'container'*/
+.escondido{
+    display: none !important;
 }
