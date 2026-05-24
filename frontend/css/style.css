@@ -178,3 +178,15 @@ a {
 .escondido{
     display: none !important;
 }
+/* ------------- TEMAS ------------- */
+.login-formulario, .cadastro-formulario{
+    position: relative;
+}
+#botao-tema-login{
+    position:absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 20px; 
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+}
