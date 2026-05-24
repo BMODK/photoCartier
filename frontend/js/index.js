@@ -1,3 +1,4 @@
+// Variávei para controle de tema
 let temaEscuro = false;
 // ---- ELEMENTOS DE TEMAS ----
 const botaoTema = document.querySelector('#botao-tema');
