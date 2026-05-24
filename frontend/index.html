@@ -10,7 +10,7 @@
     <title>Index</title>
 </head>
 
-<body>
+<body id = "pagina-index">
   <section>
     <div class="hero-content">
       <div class="hero">
@@ -27,34 +27,27 @@
 <nav class="menu-navegacao">
   <ul>
     <li>
-      <button>
+      <button class = "botao-primario">
         <a href="#"><i class="fas fa-home"></i> Início</a>
       </button>
     </li>
     <li>
-      <button>
+      <button class="botao-secundario">
         <a href="../frontend/login.html"><i class="fas fa-jelly fa-regular fa-door-closed"></i> Login</a>
       </button>
     </li>
   </ul>
 
   <div class="barra-pesquisa">
-    <input type="text" placeholder="Pesquisar...">
-    <button class="botao-pesquisa">
+    <input id="pesquisa" type="text" placeholder="Pesquisar...">
+    <button class="botao-primario" id="botao-pesquisa">
       <i class="fas fa-search"></i>
+    </button>
+    <button class="botao-secundario" id="botao-tema">
+      <i class="fas fa-moon"></i>
     </button>
   </div>
 </nav>
-
-<div class="imagens-container">
-    <div class="catavento-master">
-        <img src="imagens/catavento1.jpg" class="foto-satelite pos-1" alt="Inspiração 1">
-        <img src="imagens/catavento2.jpg" class="foto-satelite pos-2" alt="Inspiração 2">
-        <img src="imagens/foto3.jpg" class="foto-satelite pos-3" alt="Inspiração 3">
-        <img src="imagens/foto4.jpg" class="foto-satelite pos-4" alt="Inspiração 4">
-    </div>
-</div>
-
 </body>
 
 </html>

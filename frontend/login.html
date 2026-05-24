@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<link rel="stylesheet" href="../frontend/css/login.css">
+<link rel="stylesheet" href="../frontend/css/style.css">
 
 <head>
     <meta charset="UTF-8">
@@ -8,15 +8,15 @@
     <title>Login</title>
 </head>
 
-<body>
+<body id = "pagina-login">
 
     <div class=login-geral>
         <div class=login-formulario id="container-login">
             <input type="text" id = nome-login placeholder="Login">
             <input type="password" id = senha-login placeholder="Senha">
             <div class=botoes-login>
-                <button type="button" id=botao-login> Login </button>
-                <button type="button" id=botao-nova-conta> Criar conta </button>
+                <button type="button" class="botao-primario" id="botao-login"> Login </button>
+                <button type="button" class="botao-secundario" id="botao-nova-conta"> Criar conta </button>
             </div>
         </div>
 
@@ -25,8 +25,8 @@
             <input type="text" id="novo-usuario" placeholder="Escolha um Usuário">
             <input type="password" id="nova-senha" placeholder="Crie uma Senha">
             <input type="password" id="nova-senha-confirma" placeholder="Confirme a Senha">
-            <button type="button" id="botao-cadastro"> Cadastrar </button>
-            <button type="button" id="botao-voltar"> Voltar </button>
+            <button type="button" class="botao-primario" id="botao-cadastro"> Cadastrar </button>
+            <button type="button" class="botao-secundario" id="botao-voltar"> Voltar </button>
         </div> 
         <div class=login-background>
             <img src="imagens/capalogin.jpg" alt="fundologin">
