@@ -190,3 +190,35 @@ a {
     border: 1px solid #ddd;
     padding: 6px 12px;
 }
+
+
+/* O motor do giro (o mesmo de antes) */
+@keyframes orbitaEspacial {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* A caixa mãe que guarda todas as fotos e gira no centro */
+.catavento-master {
+    position: relative;
+    width: 600px;  /* Tamanho da área do seu catavento */
+    height: 600px;
+    margin: 0 auto;
+    animation: orbitaEspacial 40s linear infinite; /* Giro bem lento e elegante */
+}
+
+
+.foto-satelite {
+    position: absolute;
+    width: 100px;  
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px; 
+}
+
+/* --- ESPALHANDO AS FOTOS PELA ÓRBITA --- */
+/* Agora você usa as classes de posição para jogar cada uma em um canto */
+.pos-1 { top: 0; left: 250px; }       /* No topo, centralizada */
+.pos-2 { top: 250px; right: 0; }     /* Na extrema direita */
+.pos-3 { bottom: 0; left: 250px; }    /* Na base, centralizada */
+.pos-4 { top: 250px; left: 0; }      /* Na extrema esquerda */
