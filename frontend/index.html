@@ -5,25 +5,31 @@
 
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
 </head>
 
-<body id = "pagina-index">
+<body id="pagina-index">
   <div class="cosmos-container">
     <div class="catavento-master">
-        <img src="imagens/catavento1.jpg" class="foto-satelite pos-1" alt="Inspiração 1">
-        <img src="imagens/catavento2.jpg" class="foto-satelite pos-2" alt="Inspiração 2">
-        <img src="imagens/foto3.jpg" class="foto-satelite pos-3" alt="Inspiração 3">
-        <img src="imagens/foto4.jpg" class="foto-satelite pos-4" alt="Inspiração 4">
+      <img src="imagens/catavento1.jpg" class="foto-satelite pos-01" alt="Inspiração 1">
+      <img src="imagens/catavento2.jpg" class="foto-satelite pos-02" alt="Inspiração 2">
+      <img src="imagens/catavento3.jpg" class="foto-satelite pos-03" alt="Inspiração 3">
+      <img src="imagens/catavento4.jpg" class="foto-satelite pos-04" alt="Inspiração 4">
+      <div class="catavento-secundario">
+        <img src="imagens/catavento1.jpg" class="foto-satelite pos-11" alt="Inspiração 1">
+        <img src="imagens/catavento2.jpg" class="foto-satelite pos-12" alt="Inspiração 2">
+        <img src="imagens/catavento3.jpg" class="foto-satelite pos-13" alt="Inspiração 3">
+        <img src="imagens/catavento4.jpg" class="foto-satelite pos-14" alt="Inspiração 4">
+      </div>
     </div>
-</div>
+  </div>
   <section>
     <div class="hero-content">
       <div class="hero">
         <img src="../frontend/imagens/hero.jpg" alt="camera">
-       
+
 
 
 
@@ -32,33 +38,31 @@
     </div>
   </section>
 
-<nav class="menu-navegacao">
-  <ul>
-    <li>
-      <button class = "botao-primario">
-        <a href="#"><i class="fas fa-home"></i> Início</a>
+  <nav class="menu-navegacao">
+    <ul>
+      <li>
+        <button class="botao-primario">
+          <a href="#"><i class="fas fa-home"></i> Início</a>
+        </button>
+      </li>
+      <li>
+        <button class="botao-secundario">
+          <a href="../frontend/login.html"><i class="fas fa-jelly fa-regular fa-door-closed"></i> Login</a>
+        </button>
+      </li>
+    </ul>
+
+    <div class="barra-pesquisa">
+      <input id="pesquisa" type="text" placeholder="Pesquisar...">
+      <button class="botao-primario" id="botao-pesquisa">
+        <i class="fas fa-search"></i>
       </button>
-    </li>
-    <li>
-      <button class="botao-secundario">
-        <a href="../frontend/login.html"><i class="fas fa-jelly fa-regular fa-door-closed"></i> Login</a>
+      <button class="botao-secundario" id="botao-tema">
+        <i class="fas fa-moon"></i>
       </button>
-    </li>
-  </ul>
-
-  <div class="barra-pesquisa">
-    <input id="pesquisa" type="text" placeholder="Pesquisar...">
-    <button class="botao-primario" id="botao-pesquisa">
-      <i class="fas fa-search"></i>
-    </button>
-    <button class="botao-secundario" id="botao-tema">
-      <i class="fas fa-moon"></i>
-    </button>
-  </div>
-</nav>
-<script src="js/index.js"></script>
-
-
+    </div>
+  </nav>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

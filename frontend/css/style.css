@@ -206,7 +206,15 @@ a {
     margin: 0 auto;
     animation: orbitaEspacial 40s linear infinite; /* Giro bem lento e elegante */
 }
-
+/* A caixa mãe que guarda todas as fotos e gira no centro */
+.catavento-secundario {
+    position: relative;
+    width: 600px;  /* Tamanho da área do seu catavento */
+    height: 600px;
+    margin: 0 auto;
+    animation: orbitaEspacial 40s reverse infinite; /* Giro bem lento e elegante */
+    /* animation-direction: reverse; Gira no sentido contrário para criar um efeito mais dinâmico */
+}
 
 .foto-satelite {
     position: absolute;
@@ -218,7 +226,12 @@ a {
 
 /* --- ESPALHANDO AS FOTOS PELA ÓRBITA --- */
 /* Agora você usa as classes de posição para jogar cada uma em um canto */
-.pos-1 { top: 0; left: 250px; }       /* No topo, centralizada */
-.pos-2 { top: 250px; right: 0; }     /* Na extrema direita */
-.pos-3 { bottom: 0; left: 250px; }    /* Na base, centralizada */
-.pos-4 { top: 250px; left: 0; }      /* Na extrema esquerda */
+.pos-01 { top: 0; left: 250px; }       /* No topo, centralizada */
+.pos-02 { top: 250px; right: 0; }     /* Na extrema direita */
+.pos-03 { bottom: 0; left: 250px; }    /* Na base, centralizada */
+.pos-04 { top: 250px; left: 0; }      /* Na extrema esquerda */
+
+.pos-11 { top: 0; left: 300px; }       /* No topo, centralizada */
+.pos-12 { top: 300px; right: 0; }     /* Na extrema direita */
+.pos-13 { bottom: 0; left: 300px; }    /* Na base, centralizada */
+.pos-14 { top: 300px; left: 0; }   
