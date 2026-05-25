@@ -1,45 +1,57 @@
-:root{
+:root {
     --cor-branca: white;
     --cor-preta: black;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* CONFIGURAÇÕES GERAIS */
-.botao-primario{
-    background-color: var(--cor-branca); /* Fundo Branco */
-    color: var(--cor-preta);  
-    border-color: transparent;          /* Texto Preto */
-    border-radius: 0px;        /* QUADRADO PERFEITO */
+.botao-primario {
+    background-color: var(--cor-branca);
+    /* Fundo Branco */
+    color: var(--cor-preta);
+    border-color: transparent;
+    /* Texto Preto */
+    border-radius: 0px;
+    /* QUADRADO PERFEITO */
     padding: 12px 30px;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
     transition: background 0.2s;
 }
-.botao-primario:hover{
+
+.botao-primario:hover {
     background-color: transparent;
     border-color: var(--cor-branca);
     color: var(--cor-branca);
 }
-.botao-secundario{
-    background-color: transparent; /* Fundo Transparente */
-    color: var(--cor-branca);            /* Texto brancp */
+
+.botao-secundario {
+    background-color: transparent;
+    /* Fundo Transparente */
+    color: var(--cor-branca);
+    /* Texto brancp */
     border-color: var(--cor-branca);
-    border-radius: 0px;        /* QUADRADO PERFEITO */
+    border-radius: 0px;
+    /* QUADRADO PERFEITO */
     padding: 12px 30px;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
     transition: background 0.2s;
 }
-.botao-secundario:hover{
+
+.botao-secundario:hover {
     background-color: var(--cor-branca);
     color: var(--cor-preta);
 }
-input{
+
+input {
     padding: 10px;
     color: var(--cor-branca);
     background-color: transparent;
@@ -47,11 +59,13 @@ input{
     outline: none;
     border-bottom: gray 1px solid;
 }
-input:focus{
+
+input:focus {
     border-bottom: 1px solid var(--cor-branca);
 }
+
 /* ------- PÁGINA INDEX ------- */
-#pagina-index{
+#pagina-index {
     margin: 0;
     background-color: var(--cor-preta);
     color: var(--cor-branca);
@@ -59,31 +73,38 @@ input:focus{
     font-variant: small-caps;
 }
 
+@keyframes efeitoDigitar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
 .hero-content {
     display: flex;
-    fLex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border:2px dotted rgb 96 139 168); */
+    font-family: "cosmosOracle", "cosmosOracle Fallback";
+    font-size: xx-large;
+    text-align: center;
+    text-decoration-style: solid;
     height: 100vh;
     width: 100vw;
-    flex-grow: 1;
+    
 
+ 
 
 }
 
-.hero-content img {
-    position: static;
-    width: 500px;
-    height: 500px;
-    object-fit: contain;
-}
 
 .menu-navegacao {
     margin-bottom: 20px;
     display: flex;
     position: fixed;
-   
+
     top: 0;
     left: 0;
     width: 100%;
@@ -118,41 +139,48 @@ a {
     margin: 0 auto;
     gap: 8px;
 }
+
 #pesquisa {
     width: 300px;
 }
+
 .barra-pesquisa button {
     display: flex;
     gap: 8px;
-    border-radius: 20px; 
+    border-radius: 20px;
     border: 1px solid #ddd;
     padding: 6px 12px;
 }
 
 /* ------------- LOGIN PAGE -----------*/
-#pagina-login{
+#pagina-login {
     margin: 0;
     background-color: var(--cor-preta);
     color: var(--cor-branca);
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-variant: small-caps;
 }
-.login-geral{
+
+.login-geral {
     display: flex;
     width: 100%;
     height: 100vh;
 }
-.login-background{
+
+.login-background {
     max-width: 60%;
     background-color: var(--cor-branca);
     overflow: hidden;
 }
-.login-background img{
+
+.login-background img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.login-formulario, .cadastro-formulario{
+
+.login-formulario,
+.cadastro-formulario {
     background-color: var(--cor-preta);
     display: flex;
     flex-direction: column;
@@ -160,33 +188,40 @@ a {
     margin: auto 0;
     align-items: center;
 }
-.login-formulario > *{
+
+.login-formulario>* {
     width: 400px;
     margin-top: 20px;
 }
-.cadastro-formulario > *{
+
+.cadastro-formulario>* {
     width: 400px;
     margin-top: 20px;
 }
-.botoes-login{
+
+.botoes-login {
     display: flex;
     gap: 30px;
     align-items: center;
     justify-content: center;
 }
+
 /* desaparece com todo o 'container'*/
-.escondido{
+.escondido {
     display: none !important;
 }
+
 /* ------------- TEMAS ------------- */
-.login-formulario, .cadastro-formulario{
+.login-formulario,
+.cadastro-formulario {
     position: relative;
 }
-#botao-tema-login{
-    position:absolute;
+
+#botao-tema-login {
+    position: absolute;
     top: 20px;
     right: 20px;
-    border-radius: 20px; 
+    border-radius: 20px;
     border: 1px solid #ddd;
     padding: 6px 12px;
 }
@@ -194,55 +229,141 @@ a {
 
 /* O motor do giro (o mesmo de antes) */
 @keyframes orbitaEspacial {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* A caixa mãe que guarda todas as fotos e gira no centro */
 .catavento-master {
     position: absolute;
-    width: 400px;  
+    width: 400px;
     height: 400px;
-    
+
     /* Mágica matemática para centralizar 600px dentro de 900px */
-    top: 250px;    /* (900 - 600) / 2 */
-    left: 250px;   /* (900 - 600) / 2 */
-    
+    top: 250px;
+    /* (900 - 600) / 2 */
+    left: 250px;
+    /* (900 - 600) / 2 */
+
     /* Roda no sentido normal */
-    animation: orbitaEspacial 20s linear infinite; 
+    animation: orbitaEspacial 20s linear infinite;
 }
+
 /* A caixa mãe que guarda todas as fotos e gira no centro */
 .catavento-secundario {
     position: relative;
-    width: 900px;  /* Tamanho da área do seu catavento */
+    width: 900px;
+    /* Tamanho da área do seu catavento */
     height: 900px;
     margin: 0 auto;
-    animation: orbitaEspacial 40s linear infinite reverse; /* Giro bem lento e elegante */
+    animation: orbitaEspacial 40s linear infinite reverse;
+    /* Giro bem lento e elegante */
     /* animation-direction: reverse; Gira no sentido contrário para criar um efeito mais dinâmico */
 }
 
+.cosmos-container {
+    position: fixed;
+    /* Descola o catavento e fixa ele na tela */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* Ocupa a largura total da janela do navegador */
+    height: 100vh;
+    /* Ocupa a altura total da janela do navegador */
+    z-index: -1;
+    /* JOGA O CATAVENTO ATRÁS DE TEXTOS, BOTÕES E SEÇÕES! */
 
+    /* Centraliza os cataventos que estão lá dentro vertical e horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Garante que o catavento maior não crie barras de rolagem estranhas */
+}
 
 .foto-satelite {
     position: absolute;
-    width: 100px;  
+    width: 100px;
     height: 100px;
     object-fit: cover;
-    border-radius: 12px; 
+    border-radius: 12px;
 }
 
 /* --- ESPALHANDO AS FOTOS PELA ÓRBITA --- */
 /* Agora você usa as classes de posição para jogar cada uma em um canto */
-.pos-01 { top: 0; left: 150px; }       /* No topo, centralizada */
-.pos-02 { top: 150px; right: 0; }     /* Na extrema direita */
-.pos-03 { bottom: 0; left: 150px; }    /* Na base, centralizada */
-.pos-04 { top: 150px; left: 0; }      /* Na extrema esquerda */
+.pos-01 {
+    top: 0;
+    left: 150px;
+}
 
-.pos-11 { top: 0; left: 400px; }       /* No topo, centralizada */
-.pos-12 { top: 400px; right: 0; }     /* Na extrema direita */
-.pos-13 { bottom: 0; left: 400px; }    /* Na base, centralizada */
-.pos-14 { top: 400px; left: 0; }  
-.pos-15 { top: 120px; left: 120px; /* Diagonal Superior Esquerda */}     
-.pos-16 { top: 120px;right: 120px; /* Diagonal Superior Direita */}    
-.pos-17 { bottom: 120px; left: 120px; /* Diagonal Inferior Esquerda */}  
-.pos-18 { bottom: 120px; right: 120px; /* Diagonal Inferior Direita */} 
+/* No topo, centralizada */
+.pos-02 {
+    top: 150px;
+    right: 0;
+}
+
+/* Na extrema direita */
+.pos-03 {
+    bottom: 0;
+    left: 150px;
+}
+
+/* Na base, centralizada */
+.pos-04 {
+    top: 150px;
+    left: 0;
+}
+
+/* Na extrema esquerda */
+
+.pos-11 {
+    top: 0;
+    left: 400px;
+}
+
+/* No topo, centralizada */
+.pos-12 {
+    top: 400px;
+    right: 0;
+}
+
+/* Na extrema direita */
+.pos-13 {
+    bottom: 0;
+    left: 400px;
+}
+
+/* Na base, centralizada */
+.pos-14 {
+    top: 400px;
+    left: 0;
+}
+
+.pos-15 {
+    top: 120px;
+    left: 120px;
+    /* Diagonal Superior Esquerda */
+}
+
+.pos-16 {
+    top: 120px;
+    right: 120px;
+    /* Diagonal Superior Direita */
+}
+
+.pos-17 {
+    bottom: 120px;
+    left: 120px;
+    /* Diagonal Inferior Esquerda */
+}
+
+.pos-18 {
+    bottom: 120px;
+    right: 120px;
+    /* Diagonal Inferior Direita */
+}

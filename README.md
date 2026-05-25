@@ -712,28 +712,6 @@ git push origin feature/minha-feature
 # 5. Abra um Pull Request 🚀
 ```
 
-### 📋 Convenções de Commit
-
-Usamos [Conventional Commits](https://www.conventionalcommits.org/):
-
-| Prefixo | Quando usar |
-|---|---|
-| `feat:` | Nova funcionalidade |
-| `fix:` | Correção de bug |
-| `docs:` | Mudanças na documentação |
-| `refactor:` | Refatoração de código |
-| `test:` | Adição ou correção de testes |
-| `chore:` | Tarefas de manutenção |
-
-### 🐛 Reportando Bugs
-
-Antes de abrir uma issue, verifique se o bug já foi reportado. Ao abrir uma nova issue, inclua:
-- Descrição clara do problema
-- Passos para reproduzir
-- Comportamento esperado vs. atual
-- Versão da API e ambiente
-
-> Consulte o [CONTRIBUTING.md](CONTRIBUTING.md) para todas as diretrizes detalhadas.
 
 <br/>
 
@@ -741,13 +719,6 @@ Antes de abrir uma issue, verifique se o bug já foi reportado. Ao abrir uma nov
 
 ## 👥 Equipe
 
-<div align="center">
-
-| <img src="https://avatars.githubusercontent.com/u/00000001?v=4" width="80" style="border-radius:50%"/> | <img src="https://avatars.githubusercontent.com/u/00000002?v=4" width="80" style="border-radius:50%"/> | <img src="https://avatars.githubusercontent.com/u/00000003?v=4" width="80" style="border-radius:50%"/> |
-|:-:|:-:|:-:|
-| **Fulano Silva** | **Ciclana Souza** | **Beltrano Costa** |
-| 🛠️ Tech Lead & Backend | 🎨 Frontend & Design | 📸 Product & Community |
-| [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github)](https://github.com/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/) | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github)](https://github.com/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/) | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github)](https://github.com/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/) |
 
 </div>
 
