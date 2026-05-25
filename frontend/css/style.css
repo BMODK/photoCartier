@@ -99,6 +99,17 @@ input:focus {
 
 }
 
+/* pisca-pisca */
+@keyframes piscaCursor {
+  50% { border-color: transparent; }
+}
+
+#texto-maquina {
+    border-right: 3px solid var(--cor-branca); /* O cursor */
+    padding-right: 5px;
+    animation: piscaCursor 0.8s step-end infinite; /* Pisca infinitamente */
+}
+
 
 .menu-navegacao {
     margin-bottom: 20px;
