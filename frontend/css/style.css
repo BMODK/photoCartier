@@ -200,21 +200,28 @@ a {
 
 /* A caixa mãe que guarda todas as fotos e gira no centro */
 .catavento-master {
-    position: relative;
-    width: 600px;  /* Tamanho da área do seu catavento */
-    height: 600px;
-    margin: 0 auto;
-    animation: orbitaEspacial 40s linear infinite; /* Giro bem lento e elegante */
+    position: absolute;
+    width: 400px;  
+    height: 400px;
+    
+    /* Mágica matemática para centralizar 600px dentro de 900px */
+    top: 250px;    /* (900 - 600) / 2 */
+    left: 250px;   /* (900 - 600) / 2 */
+    
+    /* Roda no sentido normal */
+    animation: orbitaEspacial 20s linear infinite; 
 }
 /* A caixa mãe que guarda todas as fotos e gira no centro */
 .catavento-secundario {
     position: relative;
-    width: 600px;  /* Tamanho da área do seu catavento */
-    height: 600px;
+    width: 900px;  /* Tamanho da área do seu catavento */
+    height: 900px;
     margin: 0 auto;
-    animation: orbitaEspacial 40s reverse infinite; /* Giro bem lento e elegante */
+    animation: orbitaEspacial 40s linear infinite reverse; /* Giro bem lento e elegante */
     /* animation-direction: reverse; Gira no sentido contrário para criar um efeito mais dinâmico */
 }
+
+
 
 .foto-satelite {
     position: absolute;
@@ -226,12 +233,16 @@ a {
 
 /* --- ESPALHANDO AS FOTOS PELA ÓRBITA --- */
 /* Agora você usa as classes de posição para jogar cada uma em um canto */
-.pos-01 { top: 0; left: 250px; }       /* No topo, centralizada */
-.pos-02 { top: 250px; right: 0; }     /* Na extrema direita */
-.pos-03 { bottom: 0; left: 250px; }    /* Na base, centralizada */
-.pos-04 { top: 250px; left: 0; }      /* Na extrema esquerda */
+.pos-01 { top: 0; left: 150px; }       /* No topo, centralizada */
+.pos-02 { top: 150px; right: 0; }     /* Na extrema direita */
+.pos-03 { bottom: 0; left: 150px; }    /* Na base, centralizada */
+.pos-04 { top: 150px; left: 0; }      /* Na extrema esquerda */
 
-.pos-11 { top: 0; left: 300px; }       /* No topo, centralizada */
-.pos-12 { top: 300px; right: 0; }     /* Na extrema direita */
-.pos-13 { bottom: 0; left: 300px; }    /* Na base, centralizada */
-.pos-14 { top: 300px; left: 0; }   
+.pos-11 { top: 0; left: 400px; }       /* No topo, centralizada */
+.pos-12 { top: 400px; right: 0; }     /* Na extrema direita */
+.pos-13 { bottom: 0; left: 400px; }    /* Na base, centralizada */
+.pos-14 { top: 400px; left: 0; }  
+.pos-15 { top: 120px; left: 120px; /* Diagonal Superior Esquerda */}     
+.pos-16 { top: 120px;right: 120px; /* Diagonal Superior Direita */}    
+.pos-17 { bottom: 120px; left: 120px; /* Diagonal Inferior Esquerda */}  
+.pos-18 { bottom: 120px; right: 120px; /* Diagonal Inferior Direita */} 
