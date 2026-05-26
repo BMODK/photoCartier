@@ -9,6 +9,77 @@
     box-sizing: border-box;
 }
 
+/* RESPONSIVIDADE */
+
+/* ==========================================================================
+   SENSOR PARA TELAS MÉDIAS (Notebooks menores e Tablets - Máximo 1024px)
+   ========================================================================== */
+@media (max-width: 1024px) {
+    /* Diminuímos o catavento maior para 700px */
+    .catavento-secundario {
+        width: 700px;
+        height: 700px;
+    }
+
+    /* Diminuímos o catavento menor para 350px */
+    .catavento-master {
+        width: 350px;
+        height: 350px;
+        /* Centraliza 350px dentro do novo espaço de 700px -> (700 - 350) / 2 */
+        top: 175px;
+        left: 175px;
+    }
+
+    /* Recalcula a cruz do catavento maior para o novo centro (700 - 100) / 2 = 300px */
+    .pos-11 { top: 0; left: 300px; }       
+    .pos-12 { top: 300px; right: 0; }     
+    .pos-13 { bottom: 0; left: 300px; }    
+    .pos-14 { top: 300px; left: 0; }  
+    
+    /* Recalcula as diagonais para encolherem um pouco e não saírem do disco */
+    .pos-15 { top: 90px; left: 90px; }     
+    .pos-16 { top: 90px; right: 90px; }    
+    .pos-17 { bottom: 90px; left: 90px; }  
+    .pos-18 { bottom: 90px; right: 90px; }
+}
+
+/* ==========================================================================
+   SENSOR PARA TELAS PEQUENAS (Celulares - Máximo 600px)
+   ========================================================================== */
+@media (max-width: 600px) {
+    /* O texto do Hero diminui um pouco para não estourar a tela do celular */
+    .hero-content {
+        font-size: xl-large;
+    }
+
+    /* Escondemos o catavento maior no celular para o visual não virar um caos de fotos */
+    .catavento-secundario {
+        width: 350px;
+        height: 350px;
+    }
+    
+    /* As fotos de fora (11 a 18) somem no celular para dar leveza */
+    .catavento-secundario > .foto-satelite {
+        display: none;
+    }
+
+    /* Mantemos apenas o catavento menor girando sozinho no centro do celular */
+    .catavento-master {
+        width: 300px;
+        height: 300px;
+        /* Centraliza 300px dentro de 350px -> (350 - 300) / 2 */
+        top: 25px;
+        left: 25px;
+    }
+
+    /* Recalcula a cruz do menor para o novo tamanho (300 - 100) / 2 = 100px */
+    .pos-01 { top: 0; left: 100px; }       
+    .pos-02 { top: 100px; right: 0; }     
+    .pos-03 { bottom: 0; left: 100px; }    
+    .pos-04 { top: 100px; left: 0; }  
+}
+
+
 /* CONFIGURAÇÕES GERAIS */
 .botao-primario {
     background-color: var(--cor-branca);
